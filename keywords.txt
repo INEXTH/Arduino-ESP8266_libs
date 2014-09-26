@@ -1,0 +1,53 @@
+#######################################
+# Syntax Coloring Map For Test
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+test	KEYWORD2
+hardReset	KEYWORD2
+reset	KEYWORD2
+closeTCPServer	KEYWORD2
+openTCPServer	KEYWORD2
+connectTCP	KEYWORD2
+closeTCPConnection	KEYWORD2
+getRunningState	KEYWORD2
+getId	KEYWORD2
+getMessage	KEYWORD2
+clearNewMessage	KEYWORD2
+connectAccessPoint	KEYWORD2
+openAccessPoint	KEYWORD2
+isNewDataComing	KEYWORD2
+send	KEYWORD2
+
+######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+WIFI_CLIENT	LITERAL1
+WIFI_SERVER	LITERAL1
+
+WIFI_STATE_IDLE	LITERAL1
+WIFI_STATE_UNAVAILABLE	LITERAL1
+WIFI_STATE_SEND	LITERAL1
+WIFI_STATE_CONNECT	LITERAL1
+WIFI_NEW_NONE	LITERAL1
+WIFI_NEW_MESSAGE	LITERAL1
+WIFI_NEW_CONNECTED	LITERAL1
+WIFI_NEW_DISCONNECTED	LITERAL1
+WIFI_NEW_SEND_OK	LITERAL1
+WIFI_NEW_SEND_ERROR	LITERAL1
+WIFI_NEW_RESET	LITERAL1
+WIFI_NEW_ALREADY_CONNECT	LITERAL1
+WIFI_NEW_ETC	LITERAL1
