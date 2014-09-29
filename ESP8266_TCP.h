@@ -80,6 +80,8 @@ class ESP8266_TCP {
 
 	bool send(String message);
 	bool send(int id, String message);
+	
+	void printClientList();
 
 	private:	
 
@@ -116,8 +118,6 @@ class ESP8266_TCP {
 	void write(String str);
 	
 	int available();
-
-	String getClientList();
 
 	String read();
 	String readData();

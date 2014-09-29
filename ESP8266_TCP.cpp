@@ -510,6 +510,7 @@ String ESP8266_TCP::readData() {
             data += r;  
         }
     }
+    return "";
 }
 
 void ESP8266_TCP::write(String str) {
@@ -566,7 +567,7 @@ bool ESP8266_TCP::waitForSendStatus() {
 	return false;
 }*/
 
-String ESP8266_TCP::getClientList() {
+void ESP8266_TCP::printClientList() {
 	clearBuffer();
 	write("AT+CWLIF");
 	delay(1000);
