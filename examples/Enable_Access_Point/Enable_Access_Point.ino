@@ -14,7 +14,7 @@ ESP8266_TCP wifi;
 #define pass         "123456789"
 #define channel      5
 
-// Connect this pin to reset pin on ESP8266
+// Connect this pin to CH_PD pin on ESP8266
 #define PIN_RESET    6	
 
 void setup()
