@@ -537,7 +537,7 @@ bool ESP8266_TCP::send(int id, String message) {
 	if(getRunningState() == WIFI_STATE_IDLE) {
 		debugPrintln("ID : " + String(id) + " Send : " + message);
 		clearBuffer();
-		write("AT+CIPSEND=" + String(id) + "," + String(message.length() + 1));
+		write("AT+CIPSEND=" + String(id) + "," + String(message.length()));
 		serial->print(message);
 		flush();
 		debugPrintln(readData());
