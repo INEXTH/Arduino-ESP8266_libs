@@ -23,7 +23,7 @@ void ESP8266_TCP::begin(Stream *serial, Stream *serialDebug, int pinReset)
 	this->isDebug = true;
 	this->TCPConnected = false;
 	this->clientId = -1;
-	this->clientMessage = NULL;
+	this->clientMessage = "";
 	this->runningState = WIFI_STATE_UNAVAILABLE;
 	delay(2000);
 	//debug.begin(serialport);
@@ -41,7 +41,7 @@ void ESP8266_TCP::begin(Stream *serial, int pinReset)
 	this->isDebug = false;
 	this->TCPConnected = false;
 	this->clientId = -1;
-	this->clientMessage = NULL;
+	this->clientMessage = "";
 	this->runningState = WIFI_STATE_UNAVAILABLE;
 	delay(2000);
 	//debug.begin(serialport);
@@ -485,7 +485,7 @@ void ESP8266_TCP::clearBuffer() {
 void ESP8266_TCP::clear() {
 	clearBuffer();
 	this->clientId = -1;
-	this->clientMessage = NULL;
+	this->clientMessage = "";
 	this->TCPConnected = false;	
 }
 
