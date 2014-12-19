@@ -376,7 +376,7 @@ int ESP8266_TCP::isNewDataComing(byte type) {
 			if(data.substring(2, 6).equals("+IPD")) {
 				this->clientId = data.substring(7, 8).toInt();
 				int lastPosition = findChar(data, 9, ':');
-				int length = data.substring(9, lastPosition).toInt();
+				int length = data.substring(9, lastPosition).toInt() + 1;
 
 				if(data.charAt(lastPosition + 1) == '\n') {
 					this->clientMessage = data.substring(lastPosition + 2, lastPosition + length + 1);
