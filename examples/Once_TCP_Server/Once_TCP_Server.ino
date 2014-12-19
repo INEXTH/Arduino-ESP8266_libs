@@ -80,7 +80,7 @@ String connectAP()
   String ip = "0.0.0.0";
   while(ip.equals("0.0.0.0")) 
   {
-    String ip = wifi.connectAccessPoint(ssid, pass);
+    ip = wifi.connectAccessPoint(ssid, pass);
     if(!ip.equals("0.0.0.0")) 
     {
       break;
